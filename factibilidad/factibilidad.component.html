@@ -1,0 +1,91 @@
+<div class="col-4" class="container" style="padding-top:5px;">
+
+    <div class="row" >
+        <div class="col-4">
+            <nav id="mainNav"  style="opacity: 1;background-color: rgba(124, 124, 124, 0.973); padding-top:  500 px; height: 20px; width: 250px; text-justify: auto;">
+                <a  role="button" aria-haspopup="true" aria-expanded="false" style="color: rgb(255, 255,255); padding-left: 20px;">Menú</a>     
+             </nav>
+             <nav id="mainNav"  style="opacity: 1;background-color: rgba(225, 225, 225, 0.973); padding-top:  500 px; height: 500px; width: 250px; text-justify: auto;"> 
+                <div >
+                    <a (click)="cambiarImagenes(1)" class="dropdown-item" > PLANTA INSTALADA</a>
+                    <a (click)="irAnodosDeLaRed()" style="padding-left: 40px;  text-decoration: underline ;" class="dropdown-item" >Nodos de la red</a>
+                    <a (click)="irPOP()" style="padding-left: 40px;  text-decoration: underline ;" class="dropdown-item" >POP</a>                                           
+                    
+                    
+                    <a class="dropdown-item" (click)="cambiarImagenes(2)"> EQUIPAMIENTO </a>
+                    <a (click)="irPEXT()" style="padding-left: 40px;  text-decoration: underline ;" class="dropdown-item" >PEXT</a>
+                    <a (click)="irPOP()" style="padding-left: 40px;  text-decoration: underline ;" class="dropdown-item" >POP</a>
+
+                     
+                    
+                    <a class="dropdown-item" (click)="cambiarImagenes(3)"> COBERTURA </a>
+                    <a (click)="irLTE()" style="padding-left: 40px;  text-decoration: underline ;" class="dropdown-item" >Lte</a>
+                    <a (click)="irSATELITAL()" style="padding-left: 40px;  text-decoration: underline ;" class="dropdown-item" >Satelital</a>
+                                      
+                </div>                
+            </nav>
+        </div> 
+
+        <div *ngIf="sub_menu==null" class="col-8" >          
+            <nav id="mainNav"  style="opacity: 1;background-color: rgba(225, 225, 225, 0.973); padding-top:  500 px; height: 550px; width: 800px; text-justify: auto;"> 
+                <div style="padding-top: 10; text-align:center;">
+                    <h1>PLANTA INSTALADA</h1>
+                    <img src="./assets/img/ImgFactibilidad/Plantas1.jpg" width="320" height="170" style="border:-10;">  
+                    <p>Planta 1</p>             
+                </div>               
+                <div style="padding-top: 70; text-align: center;">
+                    <img src="./assets/img/ImgFactibilidad/Plantas2.jpg" width="320" height="170" style="border:-20;">  
+                    <p>Planta 2</p>                
+                </div>  
+            </nav>          
+        </div>   
+
+        <div *ngIf="sub_menu==1" class="col-8" >          
+            <nav id="mainNav"  style="opacity: 1;background-color: rgba(225, 225, 225, 0.973); padding-top:  500 px; height: 550px; width: 800px; text-justify: auto;"> 
+                <div style="padding-top: 10; text-align:center;">
+                    <h1>PLANTA INSTALADA</h1>
+                    <img src="./assets/img/ImgFactibilidad/Plantas1.jpg" width="320" height="170" style="border:-10;">  
+                    <p>Planta 1</p>             
+                </div>               
+                <div style="padding-top: 70; text-align: center;">
+                    <img src="./assets/img/ImgFactibilidad/Plantas2.jpg" width="320" height="170" style="border:-20;">  
+                    <p>Planta 2</p>                
+                </div>  
+            </nav>          
+        </div>   
+
+        <div  *ngIf="sub_menu==2"class="col-8" >           >
+            <nav id="mainNav"  style="opacity: 1;background-color: rgba(225, 225, 225, 0.973); padding-top:  500 px; height: 550px; width: 800px; text-justify: auto;"> 
+                <div style="padding-top: 10; text-align:center;">
+                    <h1>EQUIPAMENTO</h1>
+                    <img src="./assets/img/ImgFactibilidad/Equipamento1.jpg" width="320" height="170" style="border:-10;">  
+                    <p>Equipamento 1</p>             
+                </div>               
+                <div style="padding-top: 100PX; text-align: center;">
+                    <img src="./assets/img/ImgFactibilidad/Equipamento2.png" width="320" height="170" style="border:-20;">  
+                    <p>Equipamento 2</p>                
+                </div>  
+            </nav>          
+        </div>   
+
+        <div  *ngIf="sub_menu==3"class="col-8" >            
+            <nav id="mainNav"  style="opacity: 1;background-color: rgba(225, 225, 225, 0.973); padding-top:  500 px; height: 550px; width: 800px; text-justify: auto;"> 
+                <div style="padding-top: 10; text-align:center;">
+                    <h1>COBERTURA</h1>
+                    <img src="./assets/img/ImgFactibilidad/Cobertura1.jpg" width="320" height="170" style="border:-10;">  
+                    <p>1. Foto de no se que</p>             
+                </div>               
+                <div style="padding-top: 50; text-align: center;">
+                    <img src="./assets/img/ImgFactibilidad/Cobertura2.jpg" width="320" height="170" style="border:-20;">  
+                    <p>1. Foto de no se que</p>                
+                </div>  
+            </nav>       
+
+        </div>   
+    </div>
+
+</div>
+
+
+
+
